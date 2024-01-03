@@ -24,10 +24,6 @@ export function NewTaskform({onSubmit}){
 
     time = time.toString();
 
-
-
-    
-
     let Submit = (e) => {
         e.preventDefault();
         if(newItem === "") return;
