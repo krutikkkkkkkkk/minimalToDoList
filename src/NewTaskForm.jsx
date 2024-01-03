@@ -42,14 +42,14 @@ export function NewTaskform({onSubmit}){
     <p className="py-2">Date: {date} Time: {time}</p>
    </div>
     
-    <label className="form-label" htmlFor="item">New Task</label>
+    <label className="form-label">New Task</label>
     <div className="input-group mb-3">
         <input type="text"
         value={newItem} 
         onChange={e => setNewItem(e.target.value)} 
         className="form-control" 
         placeholder="Add a new task" 
-        id="item" />
+         />
     </div>
     <button className="add btn btn-primary"> 
         Add Task
