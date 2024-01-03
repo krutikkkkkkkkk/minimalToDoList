@@ -15,7 +15,7 @@ export function NewTaskform({onSubmit}){
         const interval = setInterval(() => {
             const todaysDate = new Date();
             const hours = todaysDate.getHours();
-            const minutes = todaysDate.getMinutes();
+            const minutes = todaysDate.getMinutes() > 9 ? todaysDate.getMinutes() : `0${todaysDate.getMinutes()}`;
             setTime(`${hours}:${minutes}`);
         }, 1000);
 
@@ -33,9 +33,9 @@ export function NewTaskform({onSubmit}){
 
 
     return <form onSubmit={Submit} className="container py-5 px-4">
-   <div className="header d-flex justify-content-between align-items-center">
-   <h1 className="fw-bold py-2">To Do List</h1>
-    <p className="py-2">Date: {date} Time: {time}</p>
+   <div className="header d-md-flex justify-content-between align-items-center py-2">
+   <h1 className="fw-bold ">To Do List</h1>
+    <p>Date: {date} <br /> Time: {time}</p>
    </div>
     
     <label className="form-label">New Task</label>
