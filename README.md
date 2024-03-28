@@ -15,7 +15,7 @@ To get started with the project, follow these steps:
 1. Clone the repository from GitHub:
 
     ```bash
-    git clone https://github.com/reboot13-git/minimalToDoList.git
+    git clone https://github.com/krutikkkkkkkkk/minimalToDoList.git
     ```
 
 2. Install the dependencies:
